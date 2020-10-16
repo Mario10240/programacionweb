@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact</title>
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+      <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body>
+      <!----- Navigation Bar ----->
+      <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+         <div class="container">
+            <a href="#" class="navbar-brand mr-auto">
+            <img src="img/logo.png" alt="logo" height="30px" width="40px">
+            </a>
+            <div>
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                     <a href="index.html" class="nav-link">
+                     <span class="fa fa-home fa-lg"></span>
+                     Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="about.html" class="nav-link">
+                     <span class="fa fa-info fa-lg"></span>
+                     About</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">
+                     <span class="fa fa-list fa-lg"></span>
+                     Menu</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="contact.html" class="nav-link active">
+                     <span class="fa fa-address-card fa-lg"></span>
+                     Contact</a>
+                  </li>
+                  <li class="nav-item" data-toggle="modal" data-target="#LoginModal">
+                     <a class="nav-link">
+                     <span class="fa fa-sign-in fa-lg"></span>
+                     Login</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!----- Login Modal ----->
+      <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header" style="background-color: #522da8; color: white;">
+                  <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body" style="background-color: #d1c4e9;">
+                  <form>
+                     <div class="form-group">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                     </div>
+                     <div class="form-group">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password">
+                     </div>
+                  </form>
+                  <div style="display: flex;">
+                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                     <button type="button" class="btn btn-primary">Sign In</button>
+                     <div class="custom-control custom-checkbox" style="margin: 0 10px;">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1">Remember Me</label>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!----- Jumbotron ----->
+      <header class="jumbotron">
+         <div class="container">
+            <div class="row">
+               <div class="col-12 col-sm-6">
+                  <h1>Ristorante con Fusion</h1>
+                  <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
+               </div>
+               <div class="col-6 col-sm-3 align-self-center">
+                  <img src="img/logo.png" alt="logo">
+               </div>
+               <div class="col-6 col-sm-3 align-self-center">
+                  <a href="#" class="btn btn-warning btn-reserve" data-toggle="modal" data-target="#reserveModal">
+                  Reserve Table
+                  </a>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!----- Reserve Modal ----->
+      <div class="modal fade" id="reserveModal" tabindex="-1" role="dialog" aria-labelledby="reserveModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header" style="background-color: #522da8; color: white;">
+                  <h5 class="modal-title" id="reserveModalLabel">Reserve a Table</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: white;">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body" style="background-color: #d1c4e9;">
+                  <form>
+                     <div style="justify-content: space-between;">
+                        <label>Number of guests</label>
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1">
+                        <label>1</label>
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1">
+                        <label>2</label>
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1">
+                        <label>3</label>
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1">
+                        <label>4</label>
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1">
+                        <label>5</label>
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1">
+                        <label>6</label>
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1">
+                        <label>7</label>
+                     </div>
+                     <div>
+                        <label>Section</label>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                           <label class="btn btn-success active">
+                           <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                           </label>
+                           <label class="btn btn-danger">
+                           <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                           </label>
+                        </div>
+                     </div>
+                     <div>
+                        <label>Date and Time</label>
+                        <div class="row">
+                           <div class="col">
+                              <input type="date" class="form-control">
+                           </div>
+                           <div class="col">
+                              <input type="time" class="form-control" >
+                           </div>
+                        </div>
+                     </div>
+                     <div style="margin: 10px 0;">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-primary">Reserve</button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!----- Content ----->
+      <div aria-label="breadcrumb" class="topbar">
+         <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+               <a href="index.html">Home</a>
+               <label>/ Contact</label>
+            </li>
+         </ol>
+      </div>
+      <div class="header2">
+         <h4>
+            Contact
+         </h4>
+      </div>
+      <hr>
+      <div class="contact-div">
+         <div>
+            <h4>
+               Location Information
+            </h4>
+         </div>
+         <div class="address1">
+            <div class="address2">
+               <h5>
+                  Our address
+               </h5>
+               <ul class="list-unstyled">
+                  <li>
+                     <label>121, Clear Water Bay Road</label>
+                  </li>
+                  <li>
+                     <label>Clear Water Bay, Kowloon</label>
+                  </li>
+                  <li>
+                     <label>HONG KONG</label>
+                  </li>
+                  <li>
+                     <label>
+                     <span class="fa fa-phone fa-lg"></span>
+                     +852 12345 6789</label>
+                  </li>
+                  <li>
+                  </li>
+                  <li>
+                     <label>
+                     <span class="fa fa-fax fa-lg"></span>
+                     +852 8765 4321</label>
+                  </li>
+                  <li>
+                     <a href="#">
+                     <span class="fa fa-envelope fa-lg"></span>
+                     confusion@food.net</a>
+                  </li>
+                  <li >
+                     <h4>
+                        <a href="#" class="badge badge-primary"><span class="fa fa-phone fa-lg"></span>Call</a>
+                        <a href="#" class="badge badge-info"><span class="fa fa-skype fa-lg"></span>Skype</a>
+                        <a href="#" class="badge badge-success"><span class="fa fa-envelope fa-lg"></span>Email</a>
+                     </h4>
+                  </li>
+               </ul>
+            </div>
+            <div class="address2">
+               <h5>
+                  Map of our location
+               </h5>
+            </div>
+         </div>
+      </div>
+      <hr>
+      <div class="contact-div">
+         <h4>
+            Send us your feedback
+         </h4>
+         <form>
+            <div class="field">
+               <label>First Name:</label>
+               <input type="text" size="65" placeholder="First Name">
+            </div>
+            <div class="field">
+               <label>Last Name:</label>
+               <input type="text" size="65" placeholder="Last Name">
+            </div>
+            <div class="field">
+               <label>Contact tel:</label>
+               <div style="display: flex;">
+                  <div style="margin: 0 auto; width: 50%;">
+                     <input type="text" size="10" placeholder="Area code">
+                  </div>
+                  <div>
+                     <input type="text" size="49" placeholder="Phone number">
+                  </div>
+               </div>
+            </div>
+            <div class="field">
+               <label>Email:</label>
+               <input type="text" size="65" placeholder="Email">
+            </div>
+            <div class="field">
+               <label>Your feedback:</label>
+               <textarea id="" cols="65" rows="10"></textarea>
+            </div>
+            <div class="field">
+               <div>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  Send Feedback
+                  </button>
+               </div>
+               <div style="display: flex;">
+                  <div class="form-check" style="margin: 0 10px;">
+                     <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                     <label class="form-check-label" for="defaultCheck1">
+                     May we contact you?
+                     </label>
+                  </div>
+                  <select class="form-control form-control-sm" style="max-width: 70px;">
+                     <option>Tel</option>
+                     <option>Email</option>
+                  </select>
+               </div>
+            </div>
+         </form>
+      </div>
+      <!----- Feedback Modal ----->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Feedback sent!</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body">
+                  Thanks for your feedback!
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <footer class="page-footer font-small blue pt-4">
+         <div class="container-fluid text-center text-md-left">
+            <div class="row">
+               <div class="col-md-3 mb-md-0 mb-3">
+                  <h5 class="text-uppercase">Links</h5>
+                  <ul class="list-unstyled">
+                     <li>
+                        <a href="index.html">Home</a>
+                     </li>
+                     <li>
+                        <a href="about.html">About</a>
+                     </li>
+                     <li>
+                        <a href="#!">Menu</a>
+                     </li>
+                     <li>
+                        <a href="contact.html">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-md-3 mb-md-0 mb-3">
+                  <h5 class="text-uppercase">Our Adress</h5>
+                  <ul class="list-unstyled">
+                     <li>
+                        <label>121, Clear Water Bay Road</label>
+                     </li>
+                     <li>
+                        <label>Clear Water Bay, Kowloon</label>
+                     </li>
+                     <li>
+                        <label>HONG KONG</label>
+                     </li>
+                     <li>
+                        <label>
+                        <span class="fa fa-phone fa-lg"></span>
+                        +852 12345 6789</label>
+                     </li>
+                     <li>
+                     </li>
+                     <li>
+                        <label>
+                        <span class="fa fa-fax fa-lg"></span>
+                        +852 8765 4321</label>
+                     </li>
+                     <li>
+                        <a href>
+                        <span class="fa fa-envelope fa-lg"></span>
+                        confusion@food.net</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="index.html"> Ristorante Con Fusion</a>
+         </div>
+      </footer>
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
+   </body>
+</html>

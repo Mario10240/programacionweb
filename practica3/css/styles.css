@@ -1,0 +1,89 @@
+body{
+padding: 50px 0px 0px 0px;
+z-index: 0;
+}
+nav {
+background-color: #522da8;
+}
+.jumbotron {
+background-color: #9575cd;
+color: #fff;
+padding: 70px 30px;
+}
+.btn-reserve {
+color: #ffffff;
+}
+img {
+display: block;
+}
+.carousel {
+background: #512DA8; 
+}
+.carousel .carousel-item {
+height: 300px; 
+}
+.carousel .carousel-item img {
+position: absolute;
+top: 0px;
+left: 0px;
+min-height: 300px; 
+}
+#carouselButton {
+right: 0px;
+position: absolute;
+bottom: 0px;
+z-index: 1; }
+.pizza-div{
+display: flex;
+margin: 5% auto;
+width: 90%;
+}
+footer{
+background-color: #d1c4e9;
+}
+.image-pizza{
+margin: 10px 10px;
+}
+.topbar{
+margin: auto;
+width: 90%;
+}
+.header2{
+margin: auto;
+width: 90%;
+}
+hr{
+margin: auto;
+width: 90%;
+}
+.history{
+display: flex;
+width: 90%;
+margin: 40px auto;
+}
+.h-div{
+width: 70%;
+}
+.alert{
+margin: 25px auto;
+width: 90%;
+}
+.last-table{
+margin: 25px auto;
+width: 90%;
+}
+.contact-div{
+margin: 0 auto;
+width: 50%;   
+}
+.address1{
+display: flex;
+}
+.address2{
+margin: 0 auto;
+}
+.field{
+display: flex;
+justify-content: space-between;
+margin: 20px;
+}
