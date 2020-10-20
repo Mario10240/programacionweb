@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body style="margin: 0 auto; width: 50%;">
+    <div class="alert alert-info" role="alert">
+        Ejercicio 2
+    </div>
+
+    <form onsubmit="return false;">
+        <div class="form-group">
+          <label>Make:</label>
+          <input type="text" class="form-control" id="make_textbox">
+        </div>
+        <div class="form-group">
+            <label>Model:</label>
+            <input type="text" class="form-control" id="model_textbox">
+        </div>
+        <div class="form-group">
+            <label>Year:</label>
+            <input type="number" class="form-control" id="year_textbox">
+        </div>
+        <button type="submit" onclick="AddRow()" class="btn btn-primary">Agregar</button>
+        <button type="button" onclick="Clear()" class="btn btn-secondary">Limpiar Campos</button>
+        <button type="button" onclick="DelAll()" class="btn btn-danger">Eliminar Tabla</button>
+        <label id="alert1"></label>
+    </form>
+
+    <table id="myTable">
+        <tr>
+            <th>
+                Make
+            </th>
+            <th>
+                Model
+            </th>
+            <th>
+                Year
+            </th>
+        </tr>
+    </table>
+
+    
+
+    <script src="js/script1.js"></script>
+</body>
+</html>
