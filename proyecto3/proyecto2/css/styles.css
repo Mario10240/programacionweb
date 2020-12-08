@@ -1,0 +1,36 @@
+.row{
+  display: flex;
+}
+
+.dices{
+    display: contents;
+}
+
+.main{
+  display: flex;
+  width: fit-content;
+  text-align: -webkit-center;
+  margin: 60px auto;
+  background-color: floralwhite;
+}
+
+body{
+  background: deepskyblue;
+  font-family: sans-serif;
+}
+
+.scorebox{
+  background-color: red;
+  width: 60%;
+}
+
+.temporalscore{
+  margin: 35px auto;
+}
+
+.etc{
+  background-color: lightslategray;
+  width: fit-content;
+  text-align: center;
+  margin: 20px auto;
+}

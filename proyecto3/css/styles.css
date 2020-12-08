@@ -1,0 +1,33 @@
+.jumbotron{
+    margin: 20px auto;
+    width: 95%;
+    padding: 32px;
+}
+
+.aboutme{
+    margin: 20px auto;
+    width: 95%;
+}
+
+.aboutme > h2{
+    margin: 10px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.games{
+    display: flex;
+    margin: 20px auto;
+    width: 95%;
+    background-color: #e9ecef;
+}
+
+.gamedemo{
+    width: 200px;
+    height: 200px;
+}
+
+.gamecontent{
+    margin: 10px 20px;
+}
+

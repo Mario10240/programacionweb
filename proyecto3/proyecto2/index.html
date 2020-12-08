@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="column">
+            <h1 id="p1" style="background-color: red;">Jugador 1</h1>
+            <h1 class="temporalscore" id="ts1">0</h1>
+            <div class="scorebox">
+                <p>Puntaje</p>
+                <p id="score1">0</p>
+            </div>
+        </div>
+        <div style="display: grid;">
+            <img id="dice1" src="img/dice1.png" alt="a">
+            <img id="dice2" src="img/dice1.png" alt="">
+            <div style="display: grid;">
+                <button id="btn1" onclick="Shuffle()">TIRAR DADOS</button>
+                <button id="btn2" onclick="Pass()">MANTENER PUNTOS</button>
+            </div>
+        </div>
+        <div class="column">
+            <h1 id="p2" >Jugador 2</h1>
+            <h1 class="temporalscore" id="ts2" >0</h1>
+            <div class="scorebox">
+                <p>Puntaje</p>
+                <p id="score2" >0</p>
+            </div>
+        </div>
+    </div>
+    <div class="etc">
+        <button onclick="window.location.reload();">Reiniciar Juego</button>
+        <h4>Mario Valdez 180591</h4>
+    </div>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home</title>
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+      <link rel="stylesheet" href="css/styles.css">
+   </head>
+   <body>
+      <nav id="inicio"class="navbar navbar-dark bg-dark">
+         <a class="navbar-brand" href="">
+            <img src="img/logo.png" alt="a" style="height: 48px; width: 38px;"></img>
+            Mario Valdez
+         </a>
+         <div>
+            <a class="btn btn-outline-primary" href="#inicio" role="button">Inicio</a>
+            <a class="btn btn-outline-primary" href="#acerca" role="button">Acerca de mi</a>
+            <a class="btn btn-outline-primary" href="#juegox" role="button">Portfolio</a>
+            <a class="btn btn-outline-primary" href="#contacto" role="button">Contacto</a>
+         </div>
+       </nav>
+       <div class="jumbotron">
+         <h1 class="display-4">¡Hola Mundo!</h1>
+         <p class="lead">Este es mi tercer proyecto final para la materia de Programación Web del séptimo cuatrimestre de la 
+            Universidad Politécnica de Baja California.</p>
+         <hr class="my-4">
+         <p>A continuación les mostrare mis proyectos anteriores y les hablare un poco de mí.</p>
+         <p class="lead">
+            <a class="btn btn-primary" href="#acerca" role="button">Acerca de mi</a>
+          </p>
+       </div>
+
+       <div id="acerca" class="aboutme">
+          <h2>Acerca de mí</h2>
+          <p>Soy Mario Alejandro Valdez Moreno, tengo 21 años y estudio la carrera de Tecnologías de la 
+             Información de la Universidad Politécnica de Baja California.</p>
+          <p>Descubrí que la programación es lo mío desde que estudie hace 5 años la carrera técnica 
+             en Programación de Software en el Centro de Estudios Científicos y Tecnológicos de 
+             Baja California (Cecyte BC) Plantel Compuertas donde el primer lenguaje que aprendí 
+             fue JAVA con el desarrollo de aplicaciones móviles al igual que aprendí MySQL básico 
+             para el manejo de bases de datos. </p>
+          <p>En 2018 fue cuando entre a la Universidad Politécnica de Baja California en donde 
+             aprendí a utilizar el lenguaje C# en los primeros cuatrimestres con el entorno de 
+             desarrollo Visual Studio y MySQL intermedio con SQL Server Management Studio.</p>
+          <p>Actualmente no estoy trabajando en ningún proyecto de software, mi última experiencia 
+             fue en una práctica profesional de universidad en mi preparatoria de egreso en 
+             donde realicé un software para el registro de asistencia para alumnos de manera 
+             local y consistía en leer los códigos de barra de los gafetes de los alumnos y 
+             guardarlos. El proyecto quedó descontinuado, pero aprendí bastante y espero hacer 
+             proyectos más escalables y complejos a lo largo del tiempo.</p>
+          <p>Me gusta la música rock en ingles y me apasionan los videojuegos, mis favoritos 
+             son los videojuegos de mundo abierto y mi sueño es dedicarme al desarrollo de 
+             videojuegos de manera independiente y hacer mi propio juego.</p>
+          <p>Más adelante me gustaría trabajar en una empresa de desarrollo de software o 
+             de manera independiente ("freelancer") programando aplicaciones móviles, 
+             aplicaciones web y tener como pasatiempo el crear mi videojuego soñado.</p>
+          <p>Muchas gracias por leer.</p>
+       </div>
+       <h2 id="juegox" style="width: 50%; text-align: center; margin: 0 auto;">Portfolio</h2>
+       <div class="games">
+          <img class="gamedemo" src="img/game1.png" alt="a">
+          <div class="gamecontent">
+             <h2 class="demotitle">Memoria</h2>
+             <p>El juego consiste en encontrar dos pares de cartas iguales con los personajes de Rick and Morty</p>
+             <p>Me tomó casi toda la noche crear este juego al hacer que el orden asignado sea aleatorio</p>
+             <a class="btn btn-success" href="proyecto1/index.html" role="button">Jugar</a>
+             <a class="btn btn-secondary" href="https://github.com/Mario10240/programacionweb/tree/master/proyecto1" role="button">Codigo Fuente</a>
+          </div>
+       </div>
+
+       <div class="games">
+         <div class="gamecontent" style="text-align: right;">
+            <h2 class="demotitle">Dados</h2>
+            <p>Este juego de dados de dos jugadores consiste en que cada turno, un jugador debe tirar ambos dados, 
+               la suma de los dos dados que cayeron van para un contador temporal que puede ir 
+               al igual que puede mantener esos puntos temporales y sumarlos. 
+               Pero si ambos dados caen el mismo valor, pierde sus puntos temporales. 
+               Gana el primer jugador en llegar a 100 puntos</p>             
+               <a class="btn btn-secondary" href="https://github.com/Mario10240/programacionweb/tree/master/proyecto2" role="button">Codigo Fuente</a>
+               <a class="btn btn-success" href="proyecto2/index.html" role="button">Jugar</a>
+                
+         </div>
+         <img class="gamedemo" src="img/game2.png" alt="a">
+      </div>
+
+      <div class="aboutme" style="text-align: center;">
+         <h2 id="contacto">Contacto</h2>
+         <p>Puedes contactarme en por medio de estos correos:</p>
+         <p><i class="fa fa-envelope-open"> mario10240@live.com</i></p>
+         <p><i class="fa fa-envelope-open"> marioalejandro138@gmail.com</i></p>
+         <p><i class="fa fa-envelope-open"> 180591@upbc.edu.mx</i></p>
+         <p><a class="fa fa-github" href="https://github.com/Mario10240" style="color: black"> Mario102</a></p>
+         <p>Redes sociales: </p>
+         <p>
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-twitter-square"></i>
+            <i class="fa fa-instagram"></i>
+         </p>
+      </div>
+
+
+<footer class="page-footer font-small bg-dark pt-4">
+   <div class="footer-copyright text-center light py-3" style="color: white;">
+      © 2020 Mario Valdez
+   </div>
+   
+</footer>
+      <script src="node_modules/jquery/dist/jquery.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
+   </body>
+</html>
