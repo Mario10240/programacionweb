@@ -1,0 +1,15 @@
+body {
+  background-image: 
+  url("https://static.wwbw.com/the-music-room/binaries/content/gallery/wwbw/music-room/rtf-promo/stock-drums-1.jpg");
+}
+
+img{
+  border: 1px solid black;
+}
+
+div{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
