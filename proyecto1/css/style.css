@@ -1,0 +1,19 @@
+img{
+width: 120px;
+height: 120px;
+}
+
+.board{
+    
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.back{
+    background-color: #f0f0f0;
+}
+
+body{
+    background-color: grey;
+}
